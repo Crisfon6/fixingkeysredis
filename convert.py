@@ -36,7 +36,7 @@ def Transform(db):#make a new Database for the records with the keys fix how is 
             for items in newRecord.items():
                 client2.hset(str(i),items[0],items[1])  
             print("completed")
-            break
+            
         except:
             
             print("problem with this id:\t",i)
