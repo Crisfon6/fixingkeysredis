@@ -14,35 +14,50 @@
 <body>
     <div class="container">
         <img src="./img/redis_logo.png" alt="" srcset="" class="img-fluid">
-        <form >
+        <form class="mb-5">
+            <div class="row">
+                <div class="col">
             <div class="form-group">
-                <label for="Address">Address</label>
+                <label for="address">Address</label>
                 <input type="text" class="form-control" id="address">
 
             </div>
+        </div>
+        <div class="col">
             <div class="form-group">
                 <label for="port">Port</label>
                 <input type="number" class="form-control" id="port">
             </div>
+        </div>
+        </div>
             <div class="row">
                 <div class="col">
                     <div class="form-group">
 
-                        <label for="dbSource">database number to transform</label>
+                        <label for="dbSc">database number to transform</label>
                         <input type="number" class="form-control" id="dbSc">
 
                     </div>
                 </div>
                 <div class="col">
                     <div class="form-group">
-                        <label for="dbdestination">destination database number</label>
+                        <label for="dbDest">destination database number</label>
                         <input type="number" class="form-control" id="dbDest">
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="dbDestWrong">destination bad data</label>
+                        <input type="number" class="form-control" id="dbDestWrong">
 
                     </div>
 
                 </div>
+            </div>
     <input type="button" value="submit" class="btn btn-success btn-block" id="submit" onclick="onSubmit()">
-            </form>
+            </form>            
+            
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
